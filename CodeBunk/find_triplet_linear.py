@@ -22,7 +22,7 @@ def find_triple(A):
     for v in A[1:]:
       if min_val>v:
         min_val = v
-      elif b > v or b==None:
+      elif b==None or b > v :
         a,b = min_val,v
       else:
         return a,b,v
