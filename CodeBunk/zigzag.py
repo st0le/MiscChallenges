@@ -39,6 +39,7 @@ def dp(arr):
             lst.append(arr[index])
             index = A[index]
             A,B = B,A
+        lst.reverse()
         return lst
     
     if X[mx_x] < Y[mx_y]:
